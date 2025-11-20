@@ -24,9 +24,10 @@ When a metal is subject to electromagnetic radiation, the electrons in the metal
 \subsection{Rayleigh and Jeans}
 Einstein built off the results of Planck, who in turn had corrected the results of Jeans and Rayleigh.
 
-Rayleigh and Jeans were concerned with modeling the behavior of a \textit{blackbody}, a hypothetical objected that absorbs all incident light, which they could approximate with a \textit{Jeans cube}, a hollow, metal cube with a small hole, such that the hole functions as a blackbody.
-Such a cube, if heated, would give rise to standing electromagnetic waves along the cube's 3 axes, as the light emitted from the walls would reflect back onto the incoming wave with a \qty{180}{\degree} phase shift. These standing waves may described by
+Rayleigh and Jeans sought to model the behavior of a \textit{blackbody}, a hypothetical objected that absorbs all incident light, which they could approximate with a \textit{Jeans cube}, a hollow, metal cube with a small hole, such that the hole functions as a blackbody.
 
+\subsubsection{One dimension}
+Such a cube, if heated, would give rise to standing electromagnetic waves along the cube's 3 axes, as the light emitted from the walls would reflect back onto the incoming wave with a \qty{180}{\degree} phase shift. Such a standing wave, in one dimension, is described by
 \begin{equation*}
     E(x,t) = 2E_0 \sin(kx)\cos(\omega t)
 \end{equation*}
@@ -53,6 +54,7 @@ where the factor of two accounts for the polarization of the wave.
 
 This result is only one dimensional. It must now be generalized to three dimensions.
 
+\subsubsection{Three dimensions}
 Radiation of some frequency $\nu$ inside the cube would be decomposable into three components along each axis of the cube, subject to previous results, that is,
 \begin{equation*}
     \begin{aligned}
@@ -74,7 +76,7 @@ Radiation of some frequency $\nu$ inside the cube would be decomposable into thr
     &\implies \nu = \frac{c}{\lambda} = \frac{c}{2L}\sqrt{n_x^2+n_y^2+n_z^2}.
     \end{aligned}
 \end{equation*}
-Rayleigh and Jeans proceeded by calculating the number of states per range of frequencies, and then applying a statistical mechanical principle in order to arrive at the average total energy. 
+Rayleigh and Jeans proceeded by calculating the number of states per range of frequencies, and then applying a result from statistical mechanics in order to arrive at the average total energy. 
 
 In the one dimensional case, this number of states was calculable by multiplying the density of states, which was constant and easily obtained, by the length of the range of frequencies. In the three dimensional case, it is not immediately apparent what this density is.
 
@@ -91,7 +93,10 @@ This is not in itself a useful result, as the intersection of such a sphere and 
     \end{aligned}
 \end{equation*}
 
+\subsubsection{Energy density}
+Rayleigh and Jeans wanted ultimately to derive an expression for energy density (energy per unit volume), as that was the quantity that could be measured empirically for an actual Jeans cube with which they wanted to compare their model.
 
+To this end, the pair applied the theorem of \emph{equipartition of energy}.
 
 \section{Materials and Procedure}
 

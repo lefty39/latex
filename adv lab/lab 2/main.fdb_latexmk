@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1763674043.68337 "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" "main.pdf" "main" 1763674044.27016 0
-  "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" 1763674043.42212 5379 b2570b95c3f832be8ea689e64eb95c6b ""
+["pdflatex"] 1763676074.4021 "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" "main.pdf" "main" 1763676074.97227 0
+  "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" 1763676074.17698 5794 b7eca28745d2a9d9b98c42a35c2b3b13 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -123,9 +123,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1754438400 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1763339734.54926 4187667 ec76b97907054b5e6c80912ddd2b6bb0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1763339346 7759950 179fdbb8b06874202da026d3533fd4b9 ""
-  "main.aux" 1763674044.21412 1227 90b6d9fbe1ea855516f9d4ee38955dab "pdflatex"
-  "main.out" 1763674044.21512 689 584324fcfb5b908da39358aae2c4622f "pdflatex"
-  "main.tex" 1763674043.42212 5379 b2570b95c3f832be8ea689e64eb95c6b ""
+  "main.aux" 1763676074.91997 1621 6be7bd5dc360002abfcfef1c5efba8cb "pdflatex"
+  "main.out" 1763676074.91997 1114 f9a9b9337469edaabd3c651f0e9d6830 "pdflatex"
+  "main.tex" 1763676074.17698 5794 b7eca28745d2a9d9b98c42a35c2b3b13 ""
   (generated)
   "main.aux"
   "main.log"
