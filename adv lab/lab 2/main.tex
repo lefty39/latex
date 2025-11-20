@@ -10,6 +10,7 @@
 \usepackage{subcaption}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{amssymb}
 
 \title{Photoelectric effect and determination of Planck's constant}
 \author{Raymond Langehennig}
@@ -23,15 +24,43 @@ When a metal is subject to electromagnetic radiation, the electrons in the metal
 \subsection{Rayleigh and Jeans}
 Einstein built off the results of Planck, who in turn had corrected the results of Jeans and Rayleigh.
 
-Rayleigh and Jeans were concerned with modeling the behavior of a \textit{blackbody}, a hypothetical objected that absorbs all incident light, which they could approximate with a \textit{Jeans cube}, a hollow, metal cube with a small hole, such that the hole functioned as a blackbody.
+Rayleigh and Jeans were concerned with modeling the behavior of a \textit{blackbody}, a hypothetical objected that absorbs all incident light, which they could approximate with a \textit{Jeans cube}, a hollow, metal cube with a small hole, such that the hole functions as a blackbody.
+Such a cube, if heated, would give rise to standing electromagnetic waves along the cube's 3 axes, as the light emitted from the walls would reflect back onto the incoming wave with a \qty{180}{\degree} phase shift. These standing waves may described by
 
-
-
-Through the application of statistical mechanics and classical electromagnetism, Jeans and Rayleigh had derived the Rayleigh-Jeans law,
 \begin{equation*}
-    B_T(\lambda) = \frac{2 c k_\text{B} T}{\lambda^4},
+    E(x,t) = 2E_0 \sin(kx)\cos(\omega t)
 \end{equation*}
-by 
+for a wavenumber $k=2\pi/\lambda$.
+
+But these waves are subject to the boundary condition that $E=0$ at the walls, as any electric field there would immediately be cancelled by the movement of the charge of the wall itself. For a cube of side length $L$, this implies
+\begin{equation*}
+    \begin{aligned}
+        &sin(kL) = 0 \\
+        &\implies kL = n\pi\\
+        &\implies \frac{n\pi}{L} = \frac{2\pi}{\lambda}\\
+        &\implies \lambda = \frac{2L}{n} &\forall n \in \mathbb{N}   ,
+    \end{aligned}
+\end{equation*}
+or in terms of frequency,
+\begin{equation*}
+    \nu = \frac{nc}{2L}.
+\end{equation*}
+This result limits the frequencies of light possible, at which point it makes sense to talk about the \emph{density of states}, the number of states per frequency range,
+\begin{equation*}
+    \rho = 2 \frac{n}{\nu}= \frac{4L}{c},
+\end{equation*}
+where the factor of two accounts for the polarization of the wave.
+
+This result is only one dimensional. It must now be generalized to three dimensions.
+
+Consider the points of $\mathbb{N}^3 = \left\{  (n_x, n_y, n_z) \mid n_x,n_y,n_z \in \mathbb{N} \right\}$. Radiation of some frequency $\nu$ inside the cube would be decomposable into three components along each axis of the cube, subject to previous results, that is,
+\begin{equation*}
+    \mathbf{E}(\mathbf{r},t) = \left( \begin{matrix}
+        E(x,t) \\
+        E(y,t) \\
+        E(z,t)
+    \end{matrix} \right)
+\end{equation*}
 
 \section{Materials and Procedure}
 
