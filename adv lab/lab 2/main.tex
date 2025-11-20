@@ -53,14 +53,45 @@ where the factor of two accounts for the polarization of the wave.
 
 This result is only one dimensional. It must now be generalized to three dimensions.
 
-Consider the points of $\mathbb{N}^3 = \left\{  (n_x, n_y, n_z) \mid n_x,n_y,n_z \in \mathbb{N} \right\}$. Radiation of some frequency $\nu$ inside the cube would be decomposable into three components along each axis of the cube, subject to previous results, that is,
+Radiation of some frequency $\nu$ inside the cube would be decomposable into three components along each axis of the cube, subject to previous results, that is,
 \begin{equation*}
-    \mathbf{E}(\mathbf{r},t) = \left( \begin{matrix}
-        E(x,t) \\
-        E(y,t) \\
-        E(z,t)
-    \end{matrix} \right)
+    \begin{aligned}
+            &\mathbf{E}(\mathbf{r},t) = \left( \begin{matrix}
+        E_x(x,t) \\
+        E_y(y,t) \\
+        E_z(z,t)
+    \end{matrix} \right) = \left( \begin{matrix}
+        2E_{0x}\sin(2\pi x/\lambda_x)\cos(\omega t)\\
+        2E_{0y}\sin(2\pi y/\lambda_y)\cos(\omega t)\\
+        2E_{0z}\sin(2\pi z/\lambda_z)\cos(\omega t)
+    \end{matrix} \right)\\
+    &\implies\begin{cases}
+        \lambda_x = 2L/n_x \\
+        \lambda_y = 2L/n_y \\
+        \lambda_z = 2L/n_z
+    \end{cases}\\
+    &\implies \lambda = \sqrt{\lambda_x^2 + \lambda_y^2 + \lambda_z^2}\\
+    &\implies \nu = \frac{c}{\lambda} = \frac{c}{2L}\sqrt{n_x^2+n_y^2+n_z^2}.
+    \end{aligned}
 \end{equation*}
+Rayleigh and Jeans proceeded by calculating the number of states per range of frequencies, and then applying a statistical mechanical principle in order to arrive at the average total energy. 
+
+In the one dimensional case, this number of states was calculable by multiplying the density of states, which was constant and easily obtained, by the length of the range of frequencies. In the three dimensional case, it is not immediately apparent what this density is.
+
+A geometric approach yields the answer. By treating the numbers $n_x$, $n_y$, and $n_z$ as describing points in $\mathbb{N}^3$, it makes sense to treat the quantity $\sqrt{n_x^2+n_y^2+n_z^2}$ as a radius. This means that, for some frequency $\nu$, the set of points in $\mathbb{N}^3$ that lie on a sphere of radius $\frac{2L}{c}\nu$ describes all the possible combinations of $n_x$, $n_y$, and $n_z$ for that frequency.
+
+This is not in itself a useful result, as the intersection of such a sphere and $\mathbb{N}^3$ is empty for most frequencies. Instead, a range of frequencies $\mathrm{d}\nu$ must be considered, and therefore the intersection of a shell of thickness $\mathrm{d}r = \frac{2L}{c}\mathrm{d}\nu$ with $\mathbb{N}^3$. The size of this intersection must be equal to the volume of the part of the shell that lies in $\mathbb{R}_+^3$ times the volumetric density of points in $\mathbb{N}^3$, which may be seen trivially to equal 1:
+\begin{equation*}
+    \begin{aligned}
+        &\begin{aligned}
+            \mathrm{d}N(r) &= \rho_\mathbb{N}\mathrm{d}V(r) = \frac{1}{8}4\pi r^2 \mathrm{d}r\\
+        = \mathrm{d}N(\nu)&=\frac{1}{2}\pi \left(\frac{2L}{c} \right)^3\nu^2\mathrm{d}\nu
+        \end{aligned}\\
+        &\implies 2\frac{\mathrm{d}N}{\mathrm{d}\nu} = \frac{8\pi L^3}{c^3}\nu^2 = \rho(\nu).
+    \end{aligned}
+\end{equation*}
+
+
 
 \section{Materials and Procedure}
 
