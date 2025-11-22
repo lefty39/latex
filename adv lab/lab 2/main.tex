@@ -96,7 +96,16 @@ This is not in itself a useful result, as the intersection of such a sphere and 
 \subsubsection{Energy density}
 Rayleigh and Jeans wanted ultimately to derive an expression for spectral energy density (energy per unit volume per wavelength), as that was the quantity that could be measured empirically for an actual Jeans cube with which they wanted to compare their model.
 
-To this end, the pair applied the theorem of \emph{equipartition of energy}, in order to find the energy each 
+To this end, the pair utilized the 
+
+\begin{equation*}
+    \begin{aligned}
+        \bar{E} &= \sum \text{energy $\times$ probability}\\
+                &= \sum_i \varepsilon_i p_i \\
+                &= \sum_i \varepsilon_i \left( Z^{-1} \exp\left(-\frac{\varepsilon_i}{k_\mathrm{B} T}\right) \right)\\
+                &= \frac{\sum_i \varepsilon_i \exp\left( -\frac{\varepsilon_i}{k_\mathrm{B} T} \right)}{\sum_j\exp\left( -\frac{\varepsilon_j}{k_\mathrm{B}T} \right)}
+    \end{aligned}
+\end{equation*}
 
 
 \section{Materials and Procedure}
