@@ -24,7 +24,7 @@ When a metal is subject to electromagnetic radiation, the electrons in the metal
 \subsection{Rayleigh and Jeans}
 Einstein built off the results of Planck, who in turn had corrected the results of Jeans and Rayleigh.
 
-Rayleigh and Jeans sought to model the behavior of a \textit{blackbody}, a hypothetical objected that absorbs all incident light, which they could approximate with a \textit{Jeans cube}, a hollow, metal cube with a small hole, such that the hole functions as a blackbody.
+Rayleigh and Jeans sought to model the behavior of a \textit{blackbody}, a hypothetical object that absorbs all incident light, which they could approximate with a \textit{Jeans cube}, a hollow, metal cube with a small hole, such that the hole functions as a blackbody.
 
 \subsubsection{One dimension}
 Such a cube, if heated, would give rise to standing electromagnetic waves along the cube's 3 axes, as the light emitted from the walls would reflect back onto the incoming wave with a \qty{180}{\degree} phase shift. Such a standing wave, in one dimension, is described by
@@ -46,11 +46,11 @@ or in terms of frequency,
 \begin{equation*}
     \nu = \frac{nc}{2L}.
 \end{equation*}
-This result limits the frequencies of light possible, at which point it makes sense to talk about the \emph{density of states}, the number of states per frequency range,
+This result limits the frequencies of light possible, at which point it makes sense to talk about the \emph{density of states}
 \begin{equation*}
     \rho = 2 \frac{n}{\nu}= \frac{4L}{c},
 \end{equation*}
-where the factor of two accounts for the polarization of the wave.
+such that $\rho\Delta\nu$ is the number of states in a range of frequencies, and where the factor of two accounts for the polarization of the wave.
 
 This result is only one dimensional. It must now be generalized to three dimensions.
 
@@ -78,7 +78,7 @@ Radiation of some frequency $\nu$ inside the cube would be decomposable into thr
 \end{equation*}
 Rayleigh and Jeans proceeded by calculating the number of states per range of frequencies, and then applying a result from statistical mechanics in order to arrive at the average total energy. 
 
-In the one dimensional case, this number of states was calculable by multiplying the density of states, which was constant and easily obtained, by the length of the range of frequencies. In the three dimensional case, it is not immediately apparent what this density is.
+In the one dimensional case, this number of states was calculable by multiplying the density of states, which was constant and easily obtained, by the length of the range of frequencies. In the three-dimensional case, it is not immediately apparent what this density is.
 
 A geometric approach yields the answer. By treating the numbers $n_x$, $n_y$, and $n_z$ as describing points in $\mathbb{N}^3$, it makes sense to treat the quantity $\sqrt{n_x^2+n_y^2+n_z^2}$ as a radius. This means that, for some frequency $\nu$, the set of points in $\mathbb{N}^3$ that lie on a sphere of radius $\frac{2L}{c}\nu$ describes all the possible combinations of $n_x$, $n_y$, and $n_z$ for that frequency.
 
@@ -94,19 +94,40 @@ This is not in itself a useful result, as the intersection of such a sphere and 
 \end{equation*}
 
 \subsubsection{Energy density}
-Rayleigh and Jeans wanted ultimately to derive an expression for spectral energy density (energy per unit volume per wavelength), as that was the quantity that could be measured empirically for an actual Jeans cube with which they wanted to compare their model.
+Rayleigh and Jeans wanted ultimately to derive an expression for spectral energy density (energy per unit volume per unit wavelength), as that was the quantity that could be measured empirically for an actual Jeans cube with which they wanted to compare their model.
 
-To this end, the pair utilized the 
+To this end, the pair treated the system as a classical thermodynamic system, such that the probability of each state follows the Boltzmann distribution and the average energy per state may be expressed
 
-\begin{equation*}
-    \begin{aligned}
+\begin{equation}
+    \begin{aligned}[b]
         \bar{E} &= \sum \text{energy $\times$ probability}\\
                 &= \sum_i \varepsilon_i p_i \\
                 &= \sum_i \varepsilon_i \left( Z^{-1} \exp\left(-\frac{\varepsilon_i}{k_\mathrm{B} T}\right) \right)\\
-                &= \frac{\sum_i \varepsilon_i \exp\left( -\frac{\varepsilon_i}{k_\mathrm{B} T} \right)}{\sum_j\exp\left( -\frac{\varepsilon_j}{k_\mathrm{B}T} \right)}
+                &= \frac{\sum_i \varepsilon_i \exp\left( -\frac{\varepsilon_i}{k_\mathrm{B} T} \right)}{\sum_j\exp\left( -\frac{\varepsilon_j}{k_\mathrm{B}T} \right)},
+    \end{aligned}\label{eq:ebar}
+\end{equation}
+at which point the assumption is made in classical physics that energy levels are continuous, that is, energy may take on any real value. Here, a justification can be made to turn the summations into integrals with respect to $E$:
+\begin{equation*}
+    \begin{aligned}
+        \bar{E} &= \frac{\int_0^\infty E \exp\left( -\frac{E}{k_\mathrm{B} T} \right)\,\mathrm{d}E}{\int_0^\infty \exp\left( -\frac{E}{k_\mathrm{B} T} \right)\,\mathrm{d}E} \\
+            &= \frac{(k_\mathrm{B}T)^2}{k_\mathrm{B}T} = k_\mathrm{B}T,
+    \end{aligned}
+\end{equation*}
+which is just the result of the equipartition theorem.
+
+Spectral energy density may now be given as
+\begin{equation*}
+    \begin{aligned}
+        u_T(\nu) &= \frac{\text{energy}}{\text{state}} \times \frac{\text{states}}{\text{unit wavelength}} / \text{volume} \\
+            &= \bar{E}\rho(\nu)/L^3 \\
+            &= \frac{8\pi k_\mathrm{B}T}{c^3}\nu^2.
     \end{aligned}
 \end{equation*}
 
+This was an immediate and glaring problem (later called the \textit{ultraviolet catastrophe} by Paul Ehrenfest). It predicted spectral energy density to go to infinity with increasing wavelength, which was a completely unphysical result at odds with empirical data and the theoretical results of Boltzmann as given by the Stefan-Boltzmann law.
+
+\subsection{Planck}
+Max Planck sought to correct the results of Rayleigh and Jeans
 
 \section{Materials and Procedure}
 
