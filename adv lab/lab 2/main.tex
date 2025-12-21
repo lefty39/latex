@@ -121,7 +121,7 @@ which is just the result of the equipartition theorem from statistical mechanics
 Spectral energy density may now be given as
 \begin{equation}
     \begin{aligned}[b]
-        u_T(\nu) &= \frac{\text{energy}}{\text{state}} \times \frac{\text{states}}{\text{unit wavelength}} / \text{volume} \\
+        u_T(\nu) &= \frac{\text{energy}}{\text{state}} \times \frac{\text{states}}{\text{unit frequency}} / \text{volume} \\
             &= \bar{E}\rho(\nu)/L^3 \\
             &= \frac{8\pi k_\mathrm{B}T}{c^3}\nu^2,
     \end{aligned}\label{eq:rjlaw}
@@ -133,36 +133,46 @@ Though this result agreed well with data at low frequencies, it predicted spectr
 \subsubsection{Wien}
 The work of Wilhelm Wien was also instrumental in the formulation of Planck's law.
 
-\subsubsection{Planck}
-At this point, there existed two laws that were valid at opposite ends of the electromagnetic spectrum.
 
-Max Planck sought to correct the results of Rayleigh and Jeans, by first recognizing that, in the limit as $\nu\to 0$, $\bar{E}\to k_\mathrm{B}T$, which implied that $\bar{E}$ was in fact a function of $\nu$.
+\subsubsection{Planck}
+At this point, there existed two laws that were valid at opposite ends of the electromagnetic spectrum. Max Planck recognized this and "patched" the two together,
 
 \subsection{Photoelectric effect}
 
 
 \section{Materials and Procedure}
+The experiment makes use of the PASCO Scientific Photoelectric Effect apparatus (\autoref{fig:pasco}), which includes a mercury vapor lamp and photodiode circuitry enclosure mounted on a track. The electrical system consists of a power supply for the lamp, DC current amplifier that serves as a high sensitivity ammeter, and a DC voltage power supply for applying stopping voltages. Optical parameters are controlled using a set of five wavelength filters (\qtylist{365;405;436;546;577}{nm}) and varying aperture rings (\qtylist{2;4;8}{mm}) to adjust light intensity. 
 
+The mercury lamp was allowed to warm up for ten minutes after activation. During this time, the current amplifier was zeroed by placing a cover over the photodiode and adjusting the zeroing knob until the meter read \qty{0}{A}.
+
+To determine Planck's constant, the stopping voltage was measured for each of the five wavelengths. For each filter, the DC power supply was adjusted until the ammeter current was reduced to zero. To account for fluctuations and establish measurement uncertainty, current readings were recorded for several voltage values on both sides of the identified stopping voltage. Results were recorded in \autoref{tab:lambdavstop}.
+
+The relationship between light intensity and electron energy was investigated by recording the stopping voltage for the three different apertures, all with the same \qty{436}{mm} filter (\autoref{tab:vstopvsint}). 
+
+Finally, the phototube was characterized by generating I-V curves for both the 2 mm and 8 mm apertures. This was achieved by recording the current as the applied voltage was swept from \qtyrange{-4.5}{3.0}{V} in \qty{0.5}{V} increments, and then up to \qty{29}{V} in \qty{2}{V} increments (\autoref{tab:vvsi}).
 
 \begin{figure}
     \centering
     \begin{subfigure}{.7\textwidth}
         \includegraphics[width=\linewidth]{apparatus.png}
-        \caption{Experimental setup}
+        \caption{Experimental setup.}
         \label{fig:setup}
     \end{subfigure}%
     \begin{subfigure}{.3\textwidth}
         \centering
         \includegraphics[width=\linewidth]{circuit.png}
-        \caption{Circuit diagram}
+        \caption{Circuit diagram.}
         \label{fig:circuit}
     \end{subfigure}
-    \caption{}
+    \caption{PASCO Scientific Photoelectric Effect apparatus.}
+    \label{fig:pasco}
 \end{figure}
 
 \section{Results}
 
 \section{Discussion}
+
+% dark current
 
 \section{Conclusions}
 

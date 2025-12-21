@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1765865844.07456 "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" "main.pdf" "main" 1765865844.83123 0
-  "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" 1765865843.82575 9231 deab74bfffd73f3760069b6a8da9e996 ""
+["pdflatex"] 1766346581.52375 "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" "main.pdf" "main" 1766346581.98347 0
+  "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" 1766346581.3634 10918 d791e3d90d2627e55318a423beaccdd1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -129,9 +129,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765346373 7759951 2ee29442d9eba22b64d5193e164a2947 ""
   "apparatus.png" 1765860320.96274 1045319 980919afd96fdc7601c4604daec5bd3b ""
   "circuit.png" 1765860628.43394 36406 e2548ba60ed40324049d271f53f5d5ae ""
-  "main.aux" 1765865844.77471 3022 0db985634a1da1d35a9d82cddc02dd6f "pdflatex"
-  "main.out" 1765865844.77471 1199 1aa3228220c53850001f38b5adc1d8c1 "pdflatex"
-  "main.tex" 1765865843.82575 9231 deab74bfffd73f3760069b6a8da9e996 ""
+  "main.aux" 1766346581.94639 3235 05b5c18fc7bd6d6f8ad263462ee887fb "pdflatex"
+  "main.out" 1766346581.94739 1199 1aa3228220c53850001f38b5adc1d8c1 "pdflatex"
+  "main.tex" 1766346581.3634 10918 d791e3d90d2627e55318a423beaccdd1 ""
   (generated)
   "main.aux"
   "main.log"
