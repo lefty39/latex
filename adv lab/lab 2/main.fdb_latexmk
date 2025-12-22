@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1766364396.93672 "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" "main.pdf" "main" 1766364397.40771 0
-  "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" 1766364396.78201 10860 a9ecef5a3413e14fcc72e6ffd66801bf ""
+["pdflatex"] 1766377381.27031 "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" "main.pdf" "main" 1766377381.75327 0
+  "/home/vexic/Documents/vscode/gitlatex/latex/adv lab/lab 2/main.tex" 1766377380.62172 17143 5918e5dcfcd8b4cf4a65547e3110b774 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -44,8 +44,10 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1248133631 32166 b0c356b15f19587482a9217ce1d8fa67 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -127,11 +129,15 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1764115200 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1765346580.67205 4547809 72a019b3ea2e5a9ca986a536dc67eb1c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1765346373 7759951 2ee29442d9eba22b64d5193e164a2947 ""
+  "V_vs_I.pdf" 1766367325.21967 40499 8fcdc4fd563ba330e8b44ef9df7ba322 ""
+  "V_vs_I.pdf_tex" 1766367325.2198 2068 638b5aceeffec1d013e128bf579c8214 ""
   "apparatus.png" 1765860320.96274 1045319 980919afd96fdc7601c4604daec5bd3b ""
   "circuit.png" 1765860628.43394 36406 e2548ba60ed40324049d271f53f5d5ae ""
-  "main.aux" 1766364397.37079 3235 05b5c18fc7bd6d6f8ad263462ee887fb "pdflatex"
-  "main.out" 1766364397.37179 1199 1aa3228220c53850001f38b5adc1d8c1 "pdflatex"
-  "main.tex" 1766364396.78201 10860 a9ecef5a3413e14fcc72e6ffd66801bf ""
+  "main.aux" 1766377381.71377 4822 50747c1b5dd2b16a460c04ecb34a8176 "pdflatex"
+  "main.out" 1766377381.71377 1214 b36cd4181b274b16f04801061b4234c1 "pdflatex"
+  "main.tex" 1766377380.62172 17143 5918e5dcfcd8b4cf4a65547e3110b774 ""
+  "photo_data.pdf" 1766367175.30175 17613 90d25e2f0e535604ee78988efe912d97 ""
+  "photo_data.pdf_tex" 1766367175.30187 2076 9aab528a7c5c8b803bfd631d38e47366 ""
   (generated)
   "main.aux"
   "main.log"

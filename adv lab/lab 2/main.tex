@@ -28,7 +28,7 @@ Everything with a temperature above absolute zero, as it turns out, emits therma
 \subsubsection{Rayleigh and Jeans}
 Einstein built off the results of Planck, who in turn had corrected the results of Jeans and Rayleigh.
 
-Rayleigh and Jeans sought to model the behavior of a \textit{blackbody}, a hypothetical object that absorbs all incident light, which they could approximate with a \textit{Jeans cube}, a hollow, metal cube with a small hole, such that the hole functions as a blackbody.
+Rayleigh and Jeans sought to model the behavior of a \emph{blackbody}, a hypothetical object that absorbs all incident light, which they could approximate with a \emph{Jeans cube}, a hollow, metal cube with a small hole, such that the hole functions as a blackbody.
 \paragraph{One dimension}
 Such a cube, if heated, would give rise to standing electromagnetic waves along the cube's 3 axes, as the light emitted from the walls would reflect back onto the incoming wave with a \qty{180}{\degree} phase shift. Such a standing wave, in one dimension, is described by
 \begin{equation*}
@@ -135,10 +135,46 @@ The work of Wilhelm Wien was also instrumental in the formulation of Planck's la
 
 
 \subsubsection{Planck}
-At this point, there existed two laws that were valid at opposite ends of the electromagnetic spectrum. Max Planck recognized this and "patched" the two together,
+At this point, there existed two laws that were valid at opposite ends of the electromagnetic spectrum. Max Planck recognized this and "patched" the two together, arriving an equation of the form
+\begin{equation}
+    u_T(\nu) = \frac{A}{\exp(B\nu/T) - 1}\nu^3,
+    \label{eq:empplanck}
+\end{equation}
+which could be fit to empirical data remarkably well across the entire spectrum.
 
+At this point, Planck would make the theoretical leap that would lead to the development of quantum physics by assuming energy was discrete rather than continuous, and uniformly distributed over every state, that is, $\varepsilon_n = n\varepsilon$, for some fundamental unit of energy $\varepsilon$. With these changes, \autoref{eq:ebarsum} then becomes
+\begin{equation*}
+        \bar{E} = \frac{\varepsilon\sum_i i \exp\left( -\frac{i \varepsilon}{k_\mathrm{B} T} \right)}{\sum_j\exp\left( -\frac{j \varepsilon}{k_\mathrm{B}T} \right)},
+\end{equation*}
+whose sums converge, giving
+\begin{equation*}
+    \bar{E} = \frac{\varepsilon}{\exp\left(-\frac{\varepsilon}{k_\text{B}T}\right) - 1}
+\end{equation*}
+and therefore
+\begin{equation*}
+    u_T(\nu) = \frac{8\pi}{c^3}\frac{\varepsilon}{\exp\left(-\frac{\varepsilon}{k_\text{B}T}\right) - 1}\nu^2.
+\end{equation*}
+
+In order to reconcile this with the results of Rayleigh, Jeans, and Wien, and \autoref{eq:empplanck}, however, $\varepsilon$ had to increase with frequency, to recover $\bar{E}\approx k_\text{B}T$ at low frequencies and $\bar{E} \approx 0$ at high frequencies. These conditions implied
+\begin{equation}
+    \varepsilon = h\nu,
+    \label{eq:planckrel}
+\end{equation}
+with a proportionality constant of $h$ and thence
+\begin{equation}
+    u_T(\nu) = \frac{8\pi h}{c^3}\frac{1}{\exp\left(-\frac{h\nu}{k_\text{B}T}\right) - 1}\nu^3,
+\end{equation}
+known as \emph{Planck's law}.
 \subsection{Photoelectric effect}
+Planck struggled to make sense of these results, and attributed this quantization to some property of the matter in the cube. It took Albert Einstein, in attempting to explain the photoelectric effect, to posit that quantization was attributable to the light itself, which was not exactly made up of waves as Maxwell had it, but quanta called photons, each with energy given by \autoref{eq:planckrel} (which would become known as the \emph{Planck-Einstein relation}).
 
+Einstein modeled electrons on the surface of the metal as residing in a potential energy well due to the lattice structure of the material, with the depth of the well $\phi$ known as the \emph{workfunction} of the material. When light with energy $h\nu > \phi$ is shone upon the metal, the light's photons may imbue the metal's electrons with enough energy to escape with a kinetic energy of up to $h\nu - \phi$.
+
+If the metal the light is incident upon is the cathode of a photodiode, then any electrons emitted may be picked up by the anode and read as a current. If a potential difference is applied across the photodiode, the voltage at which no current is read for light of a specific frequency becomes the \emph{stopping voltage}
+\begin{equation}
+    V_\text{stop} = K/e = \frac{h}{e}\nu - \frac{\phi}{e}.
+    \label{eq:vstop}
+\end{equation}
 
 \section{Materials and Procedure}
 The experiment makes use of the PASCO Scientific Photoelectric Effect apparatus (\autoref{fig:pasco}), which includes a mercury vapor lamp and photodiode circuitry enclosure mounted on a track. The electrical system consists of a power supply for the lamp, DC current amplifier that serves as a high sensitivity ammeter, and a DC voltage power supply for applying stopping voltages. Optical parameters are controlled using a set of five wavelength filters (\qtylist{365;405;436;546;577}{nm}) and varying aperture rings (\qtylist{2;4;8}{mm}) to adjust light intensity. 
@@ -149,7 +185,7 @@ The stopping voltage was measured for each of the five wavelengths. For each fil
 
 The relationship between light intensity and electron energy was investigated by recording the stopping voltage for the three different apertures, all with the same \qty{436}{mm} filter (\autoref{tab:vstopvsint}). 
 
-Finally, the phototube was characterized by generating I-V curves for both the 2 mm and 8 mm apertures. This was achieved by recording the current as the applied voltage was swept from \qtyrange{-4.5}{3.0}{V} in \qty{0.5}{V} increments, and then up to \qty{29}{V} in \qty{2}{V} increments (\autoref{tab:vvsi}).
+Finally, the phototube was characterized by generating I-V curves for both the 2 mm and 8 mm apertures. This was achieved by recording the current as the applied voltage was swept from \qtyrange{-4.5}{3.0}{V} in \qty{0.5}{V} increments, and then up to \qty{29}{V} in \qty{2}{V} increments (\autoref{fig:vvsi}).
 
 \begin{figure}
     \centering
@@ -169,13 +205,75 @@ Finally, the phototube was characterized by generating I-V curves for both the 2
 \end{figure}
 
 \section{Results}
+\subsection{$V_\text{stop}$ vs $\nu$}
+In order to obtain an uncertainty for $V_\text{stop}$, a linear fit of the voltage vs. current data obtained for each wavelength (such as can be seen in \autoref{tab:samplevstopvsf}) was made when the estimated uncertainty of the current was either subtracted or added to the current. The difference of the quotients of the fitting parameters yields the final uncertainty in $V_\text{stop}$, that is,
+\begin{equation*}
+    \delta V_\text{stop} = \frac{A_+}{B_+} - \frac{A_-}{B_-}.
+\end{equation*}
+By then making another fit, this time for $V_\text{stop}$ vs $\nu$, $h$ and $\phi$ may be recovered:
+\begin{equation*}
+    \begin{aligned}
+        V_\text{stop} &= A + B\nu \\
+                &= \frac{h}{e}\nu - \frac{\phi}{e} \\
+                &\implies \begin{cases}
+                    h = -eB \\
+                    \phi = eA
+                \end{cases}
+    \end{aligned}
+\end{equation*}
+which came out to $h = \qty{6.18 \pm 0.02e-34}{J.s}$ and $\phi = \qty{1.333 \pm 0.009}{eV}$. A plot of this can be seen in \autoref{fig:vstopvsf}
+
+\begin{table}[]
+\centering
+\caption{Voltages and currents around $V_\text{stop}$ for the \qty{365}{nm} filter.}
+\begin{tabular}{@{}rr@{}}
+\toprule
+\multicolumn{1}{l}{Voltage (V)} & \multicolumn{1}{l}{Current ($10^{-13}$ A)} \\ \midrule
+-1.901                          & -25   $\pm$ 2                                                                \\
+-1.896                          & -17   $\pm$ 5                                                                \\
+-1.891                          & -11   $\pm$ 5                                                                \\
+-1.886                          & -4    $\pm$ 6                                                                \\
+-1.881                          & 0     $\pm$ 3                                                                \\
+-1.876                          & 14    $\pm$ 4                                                                \\
+-1.869                          & 28    $\pm$ 5                                                                \\
+-1.864                          & 38    $\pm$ 3                                                                \\
+-1.859                          & 49    $\pm$ 4                                                                \\ \bottomrule
+\end{tabular}
+\label{tab:samplevstopvsf}
+\end{table}
+
+\begin{figure}
+    \centering
+    \def\svgwidth{\linewidth}
+    \input{photo_data.pdf_tex}
+    \caption{}
+    \label{fig:vstopvsf}
+\end{figure}
+
+\begin{table}[]
+    \centering
+    \caption{Light intensity vs. $V_\text{stop}$}
+\begin{tabular}{@{}rl@{}}
+\toprule
+aperture diameter (mm) & $V_\text{stop}$ (V) \\ \midrule
+8                                          & -1.316                               \\
+4                                          & -1.310                                \\
+2                                          & -1.283                               \\ \bottomrule
+\end{tabular}
+\label{tab:vstopvsint}
+\end{table}
 
 
-\section{Discussion}
 
-% dark current
-% shadows, ambient light
+\begin{figure}
+    \centering
+    \def\svgwidth{\linewidth}
+    \input{V_vs_I.pdf_tex}
+    \caption{}
+    \label{fig:vvsi}
+\end{figure}
 
 \section{Conclusions}
+The measured $h$ and an accepted $h$ of \qty{6.626e-34}{J.s} yields a percent error of 6.7\%. Additionally, \autoref{tab:vstopvsint} confirms that the energy of light is not dependent on its intensity.
 
-\end{document}  
+\end{document}
