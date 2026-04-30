@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1777572739.8923 "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/topology midterm/main.tex" "main.pdf" "main" 1777572740.46071 0
-  "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/topology midterm/main.tex" 1777572739.68852 9926 197103a86a35e515667415cc954635d3 ""
+["pdflatex"] 1777580173.17544 "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/topology midterm/main.tex" "main.pdf" "main" 1777580174.11877 0
+  "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/topology midterm/main.tex" 1777580172.83332 11048 eedff3f631538f818a3842d54be81cac ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1490131464 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1490131464 2933 9ad527ce78d7c5fa0a642dead095f172 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc" 1490131464 2934 a4a9158faed2e9e89c771b4e3b7fc12f ""
@@ -138,9 +138,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1775001600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1776102574.0208 4547823 614eba97e0451aad345770236b030e55 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776102341 7759956 a9185e3347c4dc27c98e7af803d7983a ""
-  "main.aux" 1777572740.35592 1364 82afa592e2be05a5a17eeea36488b963 "pdflatex"
-  "main.out" 1777572740.35592 889 99c462272382103b291f8b2df66705e3 "pdflatex"
-  "main.tex" 1777572739.68852 9926 197103a86a35e515667415cc954635d3 ""
+  "main.aux" 1777580173.93457 1364 c5df0e32f7c089cd75f98839e7fb2422 "pdflatex"
+  "main.out" 1777580173.93457 889 99c462272382103b291f8b2df66705e3 "pdflatex"
+  "main.tex" 1777580172.83332 11048 eedff3f631538f818a3842d54be81cac ""
   (generated)
   "main.aux"
   "main.log"
