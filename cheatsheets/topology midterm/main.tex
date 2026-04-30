@@ -1,13 +1,8 @@
 \documentclass[tbtags,columns=2]{cheatsheet}
 \usepackage{enumitem}
 \usepackage{amsmath}
-
-\title{Topology Exam 1 Cheatsheet}
-\author{Raymond Langehennig}
-\date{\today}
-
+ 
 \begin{document}
-\maketitle
 \section{Topological spaces}
 \begin{description}
     \item[topology] A set $T$ of subsets of $X$ such that \begin{enumerate}
@@ -23,10 +18,13 @@
 
     \item[fineness] $T\text{ is finer than }S \iff S \subset T$
     \item[subspace] $(Y,T_Y)$ where $Y\subset X$ and $T_Y = \left\{ Y \cap U \mid U \in T\right\}$
-    \item[closure] $\overline{A} = \mathrm{Cl}(A) = \bigcap \left\{ U\mid \complement_{X}U\in T\land A\subset U \right\}$ is the smallest closed set containing $A$
-    \item[interior] $\mathrm{Int}(A)=\bigcup \left\{ U\mid U\in T \land U\subset A \right\}$ is the largest open set contained in $A$
-    \item[boundary point] $x \in \mathrm{Cl}(A)\setminus \mathrm{Int}(A)$ 
-    \item[limit point] $\text{$L$ is a limit point in a subspace $X$} \iff \forall \text{open neighborhood $U$ of $L$},U\cap X \ne \varnothing$
+    \item[neighborhood] $U$ is a neighborhood of $x \iff$ U is an open set containing $x$
+    \item[closure] $\overline{Y} := \mathrm{Cl}_X(Y) := \bigcap \left\{ U\mid \complement_{X}U\in T\land Y\subset U \right\}$ is the smallest closed set containing $Y$.
+    \item[interior] $\mathrm{Int}(Y):=\bigcup \left\{ U\mid U\in T \land U\subset Y \right\}$ is the largest open set contained in $Y$
+    \item[boundary] $\partial_X Y := \mathrm{Cl}(Y)\setminus \mathrm{Int}(Y)$ 
+    \item[boundary point] point $x$ in subspace $Y$ is a \emph{boundary point} of Y $\iff x \in \partial_X Y$ 
+    \item[limit point] point $x$ in subspace $Y$ is a \emph{limit point} of $Y$ $\iff \forall \text{open neighborhood $U$ of $x$},U\cap Y \ne \varnothing$. $Y'$ denotes the set of limit points of $Y$.
+    \item[isolated point] point $x$ in subspace $Y$ is an \emph{isolated point} of $Y$ $\iff \{x\}$ is open in $Y$
     \item[limit of sequence] $x$ for a sequence $\left( x_{n} \right)_{n\in \mathbb{N}}$ of points in $X$ $\iff \forall U\in T,x \in U \implies \exists N\in \mathbb{N}:\forall n\geq N,  x_{n}\in U$. Equivalently though informally, there comes a point where the terms of the sequence remain within a neighborhood of $x$.
     \item[convergence] existence of the limit of a sequence
     \item[pointwise convergence] for a sequence of functions $\left( f_i \right)_{i\in \mathbb{N}}$, if $\left( f_i(x) \right)_{i\in \mathbb{N}}$ converges for all $x$ in the domain of $f_i$.
@@ -36,18 +34,26 @@
 \subsection{Properties}
 \begin{description}
     \item[connected] if $\nexists\text{ open sets } U,V : U \cup V = X \land U \cap V = \varnothing$, or equivalently $X$ and $\varnothing$ are the only clopen sets
-    \item[path-connected] if $\forall p,q \in X, \exists\text{ continuous }\left( \phi:[0,1] \to X  \right): \phi(0)=p \wedge \phi(1)=q$. Implies connectedness.
-    \item[compact] given that a \emph{cover} of $Y \subseteq X$ is a collection $\mathcal{C}$ of subsets of $X$ such that $\bigcup \mathcal{C} \supseteq Y$, and an \emph{open cover} is a cover whose elements are open, $Y$ is compact if every open cover of $Y$ includes a finite open cover of $Y$.
+    \item[path-connected] if $\forall p,q \in X, \exists\text{ continuous }\left( \phi:[0,1] \to X  \right): \phi(0)=p \wedge \phi(1)=q$. Implies but is not implied by connectedness.
+    \item[compact] given that a \emph{cover} of $Y \subseteq X$ is a collection $\mathcal{C}$ of subsets of $X$ such that $\bigcup \mathcal{C} \supseteq Y$, and an \emph{open cover} is a cover whose elements are open, $Y$ is \emph{compact} if every open cover of $Y$ includes a finite open cover of $Y$.
+    \item[limit point compact] if every infinite subset of $X$ has a limit point. Implied by but does not imply compactness.
 \end{description}
-\subsection{Special cases}
+\subsubsection{Separation axioms}
+    For a topological space $X$ in which \emph{singletons are closed}, $X$ is said to be
+\begin{description}
+    \item[regular] if every pair of disjoint point and closed set is separated by neighborhoods
+    \item[normal] if every pair of disjoint closed sets is separated by neighborhoods
+    \item[T\textsubscript{2}] if every pair of disjoint points is separated by neighborhoods \begin{itemize}
+        \item[$\implies$] compact subsets of $X$ are closed
+        \item[$\implies$] limits of sequences of points in $X$ are unique
+        \item[$\implies$] subspaces of $X$ are also T\textsubscript{2}
+        \item[$\implies$] products of $X$ with other T\textsubscript{2} spaces are also T\textsubscript{2}
+    \end{itemize}
+\end{description}
+\subsection{Special topologies}
 \begin{description}
     \item[trivial] $T=\{\varnothing, X\}$
     \item[discrete] $T=\mathcal{P}(X)$
-    \item[T\textsubscript{2}]
-     \begin{itemize}[label=$\iff$]
-        \item $\forall x_1, x_2 \in X, \exists\text{ neighborhood }U_1 \text{ of } x_1 \exists\text{ neighborhood }U_2 \text{ of } x_2 : U_1 \cap U_2 = \varnothing $
-        \item limits of sequences are unique
-    \end{itemize}
     \item[metric] for metric space $(X,d)$, the topology generated by $\left\{ B_d(p,r) \mid p \in X \land r \in \mathbb{R} \right\}$.
     \item[order] for $(X,<)$, the topology generated by the collection $\mathcal{B}$ of the following subsets  $\forall a,b \in X$.\begin{itemize}
         \item $(a,b)$
@@ -65,6 +71,9 @@
 \end{description}
 \section{Maps}
 \begin{description}
+    \item[injective] for $f:A\to B$ if $\forall a,b \in A, f(a)=f(b)\implies a = b$
+    \item[surjective] if $\forall b \in B, \exists a \in A : f(b)=a$
+    \item[bijective] if both injective and surjective
     \item[continuous] a map $f:X \to Y$ between topological spaces $(X,T)$ and $(Y,S)$ if $\forall V \in S, f^{-1}(V)\in T$. Continuous maps preserve \begin{itemize}
         \item connectedness
         \item path-connectedness
@@ -81,11 +90,13 @@
         \item $d(x,y)=d(y,x)$
         \item $d(x,z) \leq d(x,y)+d(y,z)$
     \end{enumerate}
+    \item[open ball] $B_d(p,r) := \left\{ x \mid d(x,p) < r  \right\}$
     \item A metric \emph{induces} the topology generated by the basis of all open balls using $d$.
     \item For $A \subset X$, \begin{itemize}
         \item $d(x,A):= \mathrm{inf}\left\{ d(x,a) \mid a \in A\right\}$
         \item $\mathrm{diam}\,A := \mathrm{sup}\left\{ d(a_{1},a_{2}) \mid a_{1},a_{2} \in A \right\}$
     \end{itemize}
+    \item[uniformly continuous] a map $f:X\to Y$ between metric spaces if $\forall\varepsilon > 0, \exists\delta > 0: \forall x_0, x_1 \in X, d_X (x_0, x_1) < \delta \implies d_Y(f(x_0),f(x_1))<\varepsilon$
     \item[$\varepsilon$-neighborhood] the set $$\begin{aligned}
         U(A,\varepsilon) :\!\!&= \left\{ x \mid d(x,A) < \varepsilon \right\}\\
         &= \bigcup_{a \in A} B_d(a,\varepsilon)
@@ -94,8 +105,11 @@
 \end{description}   
 \section{Theorems}
 \begin{description}
+    \item[closure] $\mathrm{Cl}(Y)=Y\cup Y'$
+    \item[closed/limit points] $Y$ is closed $\iff Y \subseteq Y'$
     \item[Uniform limit] For a sequence of functions $\left( f_n \right)$ from a topological space to a metric space, uniform convergence to $f \implies f$ is continuous.
-    \item[Extreme value] 
+    \item[Intermediate value] For continuous map $f:X\to Y$ from connected space $X$ to ordered set $Y$ in the order topology, $a,b\in X \land r\in Y \land f(a) < r < f(b) \implies \exists c\in X : f(c)=r$
+    \item[Extreme value] For continuous map $f:X\to Y$ where $X$ is compact and $Y$ is an ordered set in the order topology, then $\forall x\in X, \exists c,d\in X : f(c) \leq f(x) \leq f(d)$
     \item[Lebesgue covering] For a compact metric space $X$ with open cover $\mathcal{C}$, there is some number $\delta > 0$ such that every subset of $X$ with diameter less than $\delta$ is contained in some member of $\mathcal{C}$.
     \item[Uniform continuity] $f:X\to Y$ is a continuous map from the compact metric space $\left( X, d_X \right)$ to the metric space $\left( Y, d_Y \right) \implies f$ is uniformly continuous.
     

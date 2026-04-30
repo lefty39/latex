@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1777417323.90786 "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/topology midterm/main.tex" "main.pdf" "main" 1777417324.58922 0
-  "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/topology midterm/main.tex" 1777417323.69067 8016 c958aa164407d87c9f3dd4b711bde27f ""
+["pdflatex"] 1777572739.8923 "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/topology midterm/main.tex" "main.pdf" "main" 1777572740.46071 0
+  "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/topology midterm/main.tex" 1777572739.68852 9926 197103a86a35e515667415cc954635d3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1490131464 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1490131464 2933 9ad527ce78d7c5fa0a642dead095f172 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc" 1490131464 2934 a4a9158faed2e9e89c771b4e3b7fc12f ""
@@ -15,6 +15,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm" 1490131464 1744 9486ddc64e90094bbb83f53a83b0e415 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm" 1490131464 19548 768852037f39958c435d71846b8877ea ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1--base.tfm" 1490131464 1768 23aace73e6def3193d6e0453af90487b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/libertine/LinBiolinumTB-tlf-t1.tfm" 1490131464 19416 aedd2db224ad278ddf2c411f52d86014 ""
@@ -37,10 +38,12 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1248133631 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb" 1354061736 548786 1e51d517556d29f2841d57da58668a69 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb" 1354061736 687959 b99c9f5a9b28f3dba077d1c078bceb3f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb" 1354061736 614791 ea39341e4db76f25cb20c361802d3cd5 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb" 1354061736 538965 19c5c8b7f952ac97afb8565e9c21a82d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb" 1354061736 490980 e27f1e217a0902faea22205f197918d4 ""
+  "/usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf" 1490131464 1728 e76e04a950024a95b620698b679c9810 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinBiolinumTB-tlf-t1.vf" 1354061736 1728 4ae633ddccb76ba8d0a0906a5e2e8fdf ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf" 1354061736 1728 b078a050f24d7649619baa987d7216d8 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf" 1490131464 640 f2633b196ddbd644937d19e300a5024e ""
@@ -135,9 +138,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1775001600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1776102574.0208 4547823 614eba97e0451aad345770236b030e55 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1776102341 7759956 a9185e3347c4dc27c98e7af803d7983a ""
-  "main.aux" 1777417324.46388 1253 2fa1f4a8d4bfa4b14ec4d34381cb5a81 "pdflatex"
-  "main.out" 1777417324.46388 722 11f78bf72f2b99896c04c005708c96ec "pdflatex"
-  "main.tex" 1777417323.69067 8016 c958aa164407d87c9f3dd4b711bde27f ""
+  "main.aux" 1777572740.35592 1364 82afa592e2be05a5a17eeea36488b963 "pdflatex"
+  "main.out" 1777572740.35592 889 99c462272382103b291f8b2df66705e3 "pdflatex"
+  "main.tex" 1777572739.68852 9926 197103a86a35e515667415cc954635d3 ""
   (generated)
   "main.aux"
   "main.log"
