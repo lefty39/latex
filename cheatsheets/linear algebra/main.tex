@@ -1,0 +1,26 @@
+\documentclass[tbtags,columns=2]{cheatsheet}
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+\begin{document}
+\section{Vector spaces}
+\begin{description}
+    \item[vector space] a set $V$ with field $F$ and operations $+$ and $\cdot$ such that $\forall u,v,w \in V, \forall a,b \in F$:
+    \begin{itemize}
+        \item $u + v \in V$
+        \item $a \cdot u \in V$
+        \item $u + v = v + u$
+        \item $(u + v) + w = u + (v + w)$
+        \item $\exists 0 \in V : u + 0 = u$
+        \item $\exists (-u) \in V : u + (-u) = 0$
+        \item $1 \cdot u = u$
+        \item $(ab) \cdot u = a \cdot (b \cdot u)$
+        \item $(a + b) \cdot u = a \cdot u + b \cdot u$
+        \item $a \cdot (u + v) = a \cdot u + a \cdot v$
+    \end{itemize}
+    \item[subspace] a subset $W$ of $V$ that is itself a vector space under the same operations. It is sufficient that $W\neq\varnothing$ and $\forall u,v \in W \forall a,b \in F, au + bv \in W$.
+    \item[linear combination] for a subset $S$ of $V$, a sum of scalar multiples of vectors in $S$, $\sum_{v\in S}a_v v$
+    \item[linear independence] the property of a subset $S$ of $V$ where $\sum_{v\in S} a_v v = 0 \implies \forall v \in S, a_v = 0$
+    \item[span] $\operatorname{Span}(S):= \left\{ \sum_{v \in S}a_v v \,\middle|\, \forall s \in S, a_s \in F \right\}$, the set of all linear combinations of vectors in $S$.
+\end{description}
+\end{document}
