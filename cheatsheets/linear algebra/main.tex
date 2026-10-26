@@ -46,8 +46,10 @@ A set $V$ with field $F$ and operations $+$ and $\cdot$ such that $\forall u,v,w
 \end{itemize}
 \subsection{Standard bases}
 \begin{description}
-    \item[$F^n$] $\left\{ \left( \delta_{ij} \right)_{1\leq i \leq n} \,\middle|\, 1 \leq j \leq n\right\}$
-    \item[] 
+    \item[$F^n$] $\left\{ \left( \delta_{ij} \right)_{1\leq i \leq n} \,\middle|\, 1 \leq j \leq n\right\}$, the set of tuples where one term is $1_F$ and the rest are $0_F$.
+    \item[$M_{m\times n}(F)$] $\left\{ E_{ij} \,\middle|\, 1\leq i \leq m \land 1 \leq j \leq n \right\}$, the set of matrices where one entry is $1_F$ and the rest are $0_F$.
+    \item[$P_n(F)$] $\left\{ x \mapsto x^i \,\middle|\, 1 \leq i \leq n \right\}$
+    \item[square symmetric $n\times n$ matrices] $\left\{ E_{ii} \,\middle|\, 1\leq i \leq n \right\} \cup \left\{ E_{ij} + E_{ji} \,\middle|\, 1\leq i < j \leq n \right\}$
 \end{description}
 
 \section{Linear maps}
@@ -58,7 +60,7 @@ For vector spaces $V$ and $W$ over field $F$, a map $f:V\to W$ such that $\foral
     \item[image]  $\operatorname{Im}(f) := \left\{ w \,\middle|\, w \in W \land \exists v\in V : w = f(v) \right\}$ is the set of outputs of $f$ in $W$. Also called the range or notated $\operatorname{R}(f)$.
     \item[rank] $\operatorname{rank}(f):=\dim(\operatorname{Im}(f))$
     \item[matrix of a linear map] If $B:=\left\{ b_i \,\middle|\, 1\leq i \leq \dim(V) \right\}$ is an ordered basis of $V$ and $C:=\left\{ c_i \,\middle|\, 1\leq i \leq \dim(W) \right\}$ an ordered basis of $W$, then there exists the matrix $[f]_B^C = \left[ f\left(b_1\right) \cdots f\left(b_{\dim(V)}\right)  \right]$ such that $f(v)=[f]_B^C v$.
-    \item[coordinate vector] $\left[ v \right]_B := \left[ v_1 \cdots v_{\dim(V)} \right]^\top$, given that $v=\sum_{i=1}^{\dim(V)}v_i b_i$
+    \item[coordinate vector] $\left[ v \right]_B := \left[ v_1 \cdots v_{\dim(V)} \right]^\intercal$, given that $v=\sum_{i=1}^{\dim(V)}v_i b_i$
 \end{description}
 \subsection{Theorems}
 \begin{itemize}
@@ -70,5 +72,21 @@ For vector spaces $V$ and $W$ over field $F$, a map $f:V\to W$ such that $\foral
     \item All linear maps preserve linear dependence.
     \item Injective linear maps preserve linear independence.
     \item If $V$ is finite dimensional, then $\operatorname{null}(f)+\operatorname{rank}(f)=\dim(V)$
+    \item Rank of a linear map $f$ can be found by putting $[f]$ in RREF and counting the pivots.
+    \item Nullity of a linear map $f$ can be found via the previous theorem and the rank-nullity theorem.
+\end{itemize}
+
+\section{Matrices}
+\begin{description}
+    \item[addition] same dimensions, entrywise
+    \item[scalar multiplication] entrywise
+    \item[matrix multiplication] if $A$ is an $m\times p$ matrix and $B$ is an $p\times n$ matrix, then the product $AB$ is an $m\times n$ matrix defined by $[AB]_{ij} = \sum_{k=1}^p a_{ik}b_{kj}$. In other words, $[AB]_{ij}$ is the dot product of the $i$th row of $A$ and the $j$th column of $B$.
+    \item[inverse] for square matrix $A$, the square matrix $A^{-1}$ such that $AA^{-1} = A^{-1}A=I$.
+    \item[transpose] $[A^\intercal]_{ij} := [A]_{ji}$ 
+\end{description}
+\subsection{Theorems}
+\begin{itemize}
+    \item A matrix is invertible iff the only solution to $Av = 0$ is $v=0$.
+    \item A matrix is invertible iff the determinant is nonzero.
 \end{itemize}
 \end{document}
