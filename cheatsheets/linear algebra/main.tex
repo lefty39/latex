@@ -4,8 +4,7 @@
 
 \begin{document}
 \section{Vector spaces}
-\begin{description}
-    \item[vector space] a set $V$ with field $F$ and operations $+$ and $\cdot$ such that $\forall u,v,w \in V, \forall a,b \in F$:
+A set $V$ with field $F$ and operations $+$ and $\cdot$ such that $\forall u,v,w \in V, \forall a,b \in F$:
     \begin{itemize}
         \item $u + v \in V$
         \item $a \cdot u \in V$
@@ -18,9 +17,49 @@
         \item $(a + b) \cdot u = a \cdot u + b \cdot u$
         \item $a \cdot (u + v) = a \cdot u + a \cdot v$
     \end{itemize}
-    \item[subspace] a subset $W$ of $V$ that is itself a vector space under the same operations. It is sufficient that $W\neq\varnothing$ and $\forall u,v \in W \forall a,b \in F, au + bv \in W$.
+\begin{description}
+    \item[subspace] a subset $S$ of $V$ that is itself a vector space under the same operations. It is sufficient that $S\neq\varnothing$ and $\forall u,v \in S\:\forall a,b \in F, au + bv \in S$.
     \item[linear combination] for a subset $S$ of $V$, a sum of scalar multiples of vectors in $S$, $\sum_{v\in S}a_v v$
     \item[linear independence] the property of a subset $S$ of $V$ where $\sum_{v\in S} a_v v = 0 \implies \forall v \in S, a_v = 0$
     \item[span] $\operatorname{Span}(S):= \left\{ \sum_{v \in S}a_v v \,\middle|\, \forall s \in S, a_s \in F \right\}$, the set of all linear combinations of vectors in $S$.
+    \item[basis] a subset $B$ of $V$ that is linearly independent and spans $V$.
+    \item[dimension] $\operatorname{dim}(V)=|B|$ for basis $B$.
+    \item[sum of vector spaces] for subspaces $U$ and $W$ of vector space $V$, $U+W := \left\{ u + w \,\middle|\, u \in U \land w \in W \right\}$
 \end{description}
+\subsection{Theorems}
+\begin{itemize}
+    \item Zero vectors are unique for each vector space.
+    \item Each vector has a unique additive inverse.
+    \item Intersections of subspaces are subspaces.
+    \item Spans are subspaces.
+    \item Every vector has a unique representation w.r.t. a basis.
+    \item Every basis of a vector space has the same cardinality.
+    \item for a subset $S$ of $V$, $|S| > \dim(V) \implies S \text{ is linearly dependent}$.
+    \item for a subset $S$ of $V$, the following imply $S$ is a basis:\begin{itemize}
+        \item $S$ is linearly independent and spans $V$
+        \item $S$ is linearly independent with $|S| = \dim(V)$ 
+        \item $S$ spans $V$ with $|S| = \dim(V)$
+    \end{itemize}
+    \item for subspaces $W_1$ and $W_2$, $\dim(W_1 + W_2)=\dim(W_1) + \dim(W_2) - \dim(W_1 \cap W_2)$
+
+\end{itemize}
+\subsection{Standard bases}
+\begin{description}
+    \item[] 
+\end{description}
+
+\section{Linear maps}
+For vector spaces $V$ and $W$ over field $F$, a map $f:V\to W$ such that $\forall a,b\in F\:\forall u,v \in V = f(au + bv) = af(u) + bf(v)$.
+\begin{description}
+    \item[kernel] $\operatorname{Ker}(f) := \left\{ v \,\middle|\, v\in V \land f(v) = 0 \right\}$ is the set of vectors in $V$ that $f$ takes to the zero vector in $W$. Also called the null space or notated $\operatorname{N}(f)$.
+    \item[nullity] $\operatorname{null}(f) := \dim(\operatorname{Ker}(f))$
+    \item[image]  $\operatorname{Im}(f) := \left\{ w \,\middle|\, w \in W \land \exists v\in V : w = f(v) \right\}$ is the set of outputs of $f$ in $W$. Also called the range or notated $\operatorname{R}(f)$.
+    \item[rank] $\operatorname{rank}(f):=\dim(\operatorname{Im}(f))$
+\end{description}
+\subsection{Theorems}
+\begin{itemize}
+    \item $f(0_V) = 0_W$
+    \item $f\text{ is injective}\iff \operatorname{Ker}(f) = \left\{ 0 \right\} \iff \operatorname{null}(f)=0$
+    \item $f\text{ is surjective}\iff \operatorname{Im}(f)=W \iff \operatorname{rank}(f)=\dim(f)$
+\end{itemize}
 \end{document}
