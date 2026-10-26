@@ -24,7 +24,7 @@ A set $V$ with field $F$ and operations $+$ and $\cdot$ such that $\forall u,v,w
     \item[span] $\operatorname{Span}(S):= \left\{ \sum_{v \in S}a_v v \,\middle|\, \forall s \in S, a_s \in F \right\}$, the set of all linear combinations of vectors in $S$.
     \item[basis] a subset $B$ of $V$ that is linearly independent and spans $V$.
     \item[dimension] $\operatorname{dim}(V)=|B|$ for basis $B$.
-    \item[sum of vector spaces] for subspaces $U$ and $W$ of vector space $V$, $U+W := \left\{ u + w \,\middle|\, u \in U \land w \in W \right\}$
+    \item[sum of vector subspaces] for subspaces $U$ and $W$ of vector space $V$, $U+W := \left\{ u + w \,\middle|\, u \in U \land w \in W \right\}$
 \end{description}
 \subsection{Theorems}
 \begin{itemize}
@@ -75,6 +75,8 @@ For vector spaces $V$ and $W$ over field $F$, a map $f:V\to W$ such that $\foral
     \item All linear maps preserve linear dependence.
     \item Injective linear maps preserve linear independence.
     \item If $V$ is finite dimensional, then $\operatorname{null}(f)+\operatorname{rank}(f)=\dim(V)$
+    \item The basis of $\operatorname{Ker}(f)$ can be found by finding the RREF $A$ of $[f]$ and solving $Ax=0$ for the pivot variables in terms of the free variables, substituting these back into $x$ and factoring out the free variables. The basis is then the set of vectors in this linear combination.
+    \item The basis of $\operatorname{Im}(f)$ is the set of columns of $[f]$ that are pivot columns in RREF.
     \item Rank of a linear map $f$ can be found by putting $[f]$ in RREF and counting the pivots.
     \item Nullity of a linear map $f$ can be found via the previous theorem and the rank-nullity theorem.
 \end{itemize}
@@ -90,5 +92,7 @@ For vector spaces $V$ and $W$ over field $F$, a map $f:V\to W$ such that $\foral
 \subsection{Theorems}
 \begin{itemize}
     \item A matrix is invertible iff the only solution to $Av = 0$ is $v=0$ iff the determinant is nonzero.
+    \item $Ax = b$ has a solution (is consistent) iff $\operatorname{rank}(A)=\operatorname{rank}(A|b)$
+    \item if $Ax = b$ is consistent with rank $r$, every solution is $s = \sum $
 \end{itemize}
 \end{document}
