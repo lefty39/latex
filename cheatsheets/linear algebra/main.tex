@@ -55,11 +55,17 @@ For vector spaces $V$ and $W$ over field $F$, a map $f:V\to W$ such that $\foral
     \item[nullity] $\operatorname{null}(f) := \dim(\operatorname{Ker}(f))$
     \item[image]  $\operatorname{Im}(f) := \left\{ w \,\middle|\, w \in W \land \exists v\in V : w = f(v) \right\}$ is the set of outputs of $f$ in $W$. Also called the range or notated $\operatorname{R}(f)$.
     \item[rank] $\operatorname{rank}(f):=\dim(\operatorname{Im}(f))$
+    \item[matrix of a linear map] If $B:=\left\{ b_i \,\middle|\, 0\leq i \leq \dim(V) \right\}$ is an ordered basis of $V$ and $C:=\left\{ c_i \,\middle|\, 0\leq i \leq \dim(W) \right\}$ an ordered basis of $W$, then there exists the matrix $[f]_B^C = \left[  \right]$ such that 
 \end{description}
 \subsection{Theorems}
 \begin{itemize}
     \item $f(0_V) = 0_W$
     \item $f\text{ is injective}\iff \operatorname{Ker}(f) = \left\{ 0 \right\} \iff \operatorname{null}(f)=0$
     \item $f\text{ is surjective}\iff \operatorname{Im}(f)=W \iff \operatorname{rank}(f)=\dim(f)$
+    \item The inverse of an isomorphism is an isomorphism.
+    \item Vector spaces are isomorphic iff they have the same dimension.
+    \item All linear maps preserve linear dependence.
+    \item Injective linear maps preserve linear independence.
+    \item If $V$ is finite dimensional, then $\operatorname{null}(f)+\operatorname{rank}(f)=\dim(V)$
 \end{itemize}
 \end{document}
