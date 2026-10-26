@@ -32,6 +32,7 @@ A set $V$ with field $F$ and operations $+$ and $\cdot$ such that $\forall u,v,w
     \item Each vector has a unique additive inverse.
     \item Intersections of subspaces are subspaces.
     \item Spans are subspaces.
+    \item Every vector space has a basis.
     \item Every vector has a unique representation w.r.t. a basis.
     \item Every basis of a vector space has the same cardinality.
     \item for a subset $S$ of $V$, $|S| > \dim(V) \implies S \text{ is linearly dependent}$.
@@ -45,6 +46,7 @@ A set $V$ with field $F$ and operations $+$ and $\cdot$ such that $\forall u,v,w
 \end{itemize}
 \subsection{Standard bases}
 \begin{description}
+    \item[$F^n$] $\left\{ \left( \delta_{ij} \right)_{1\leq i \leq n} \,\middle|\, 1 \leq j \leq n\right\}$
     \item[] 
 \end{description}
 
@@ -55,7 +57,8 @@ For vector spaces $V$ and $W$ over field $F$, a map $f:V\to W$ such that $\foral
     \item[nullity] $\operatorname{null}(f) := \dim(\operatorname{Ker}(f))$
     \item[image]  $\operatorname{Im}(f) := \left\{ w \,\middle|\, w \in W \land \exists v\in V : w = f(v) \right\}$ is the set of outputs of $f$ in $W$. Also called the range or notated $\operatorname{R}(f)$.
     \item[rank] $\operatorname{rank}(f):=\dim(\operatorname{Im}(f))$
-    \item[matrix of a linear map] If $B:=\left\{ b_i \,\middle|\, 0\leq i \leq \dim(V) \right\}$ is an ordered basis of $V$ and $C:=\left\{ c_i \,\middle|\, 0\leq i \leq \dim(W) \right\}$ an ordered basis of $W$, then there exists the matrix $[f]_B^C = \left[  \right]$ such that 
+    \item[matrix of a linear map] If $B:=\left\{ b_i \,\middle|\, 1\leq i \leq \dim(V) \right\}$ is an ordered basis of $V$ and $C:=\left\{ c_i \,\middle|\, 1\leq i \leq \dim(W) \right\}$ an ordered basis of $W$, then there exists the matrix $[f]_B^C = \left[ f\left(b_1\right) \cdots f\left(b_{\dim(V)}\right)  \right]$ such that $f(v)=[f]_B^C v$.
+    \item[coordinate vector] $\left[ v \right]_B := \left[ v_1 \cdots v_{\dim(V)} \right]^\top$, given that $v=\sum_{i=1}^{\dim(V)}v_i b_i$
 \end{description}
 \subsection{Theorems}
 \begin{itemize}
