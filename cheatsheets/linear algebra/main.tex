@@ -36,7 +36,7 @@ A set $V$ with field $F$ and operations $+$ and $\cdot$ such that $\forall u,v,w
     \item Every vector has a unique representation w.r.t. a basis.
     \item Every basis of a vector space has the same cardinality.
     \item for a subset $S$ of $V$, $|S| > \dim(V) \implies S \text{ is linearly dependent}$.
-    \item for a subset $S$ of $V$, the following imply $S$ is a basis:\begin{itemize}
+    \item for a subset $S$ of $V$, the following each imply $S$ is a basis:\begin{itemize}
         \item $S$ is linearly independent and spans $V$
         \item $S$ is linearly independent with $|S| = \dim(V)$ 
         \item $S$ spans $V$ with $|S| = \dim(V)$
@@ -61,6 +61,9 @@ For vector spaces $V$ and $W$ over field $F$, a map $f:V\to W$ such that $\foral
     \item[rank] $\operatorname{rank}(f):=\dim(\operatorname{Im}(f))$
     \item[matrix of a linear map] If $B:=\left\{ b_i \,\middle|\, 1\leq i \leq \dim(V) \right\}$ is an ordered basis of $V$ and $C:=\left\{ c_i \,\middle|\, 1\leq i \leq \dim(W) \right\}$ an ordered basis of $W$, then there exists the matrix $[f]_B^C = \left[ f\left(b_1\right) \cdots f\left(b_{\dim(V)}\right)  \right]$ such that $f(v)=[f]_B^C v$.
     \item[coordinate vector] $\left[ v \right]_B := \left[ v_1 \cdots v_{\dim(V)} \right]^\intercal$, given that $v=\sum_{i=1}^{\dim(V)}v_i b_i$
+    \item[injective] if $f(x) = f(y) \implies x = y$. Synonymous with one-to-one.
+    \item[surjective] if $\forall y \in W, \exists x \in V : y = f(x)$. Synonymous with onto.
+    \item[isomorphism] $f$ is surjective and injective. Equivalently invertible.
 \end{description}
 \subsection{Theorems}
 \begin{itemize}
@@ -86,7 +89,6 @@ For vector spaces $V$ and $W$ over field $F$, a map $f:V\to W$ such that $\foral
 \end{description}
 \subsection{Theorems}
 \begin{itemize}
-    \item A matrix is invertible iff the only solution to $Av = 0$ is $v=0$.
-    \item A matrix is invertible iff the determinant is nonzero.
+    \item A matrix is invertible iff the only solution to $Av = 0$ is $v=0$ iff the determinant is nonzero.
 \end{itemize}
 \end{document}
