@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1793044908.75018 "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/linear algebra/main.tex" "main.pdf" "main" 1793044909.39842 0
-  "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/linear algebra/main.tex" 1793044908.53342 6970 bf89361550eebea9778e3f4c480e0264 ""
+["pdflatex"] 1793045888.4375 "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/linear algebra/main.tex" "main.pdf" "main" 1793045889.02387 0
+  "/home/vexic/Documents/vscode/gitlatex/latex/cheatsheets/linear algebra/main.tex" 1793045888.22934 7115 395e8d28a58da108595bc4428759f4b3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1490131464 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1490131464 2933 9ad527ce78d7c5fa0a642dead095f172 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc" 1490131464 3357 5261ce65ba03aef9faf6135657b9abb6 ""
@@ -126,9 +126,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1777593600 43785 66587115382950aca692b5f6e3c2fb74 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1782408141 4755181 4e5eab1ba5469f6c00d6b875ac825842 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1790932611 3520868 c2f9e1934dc1cfeab8f9d1f53a4dfced ""
-  "main.aux" 1793044909.31341 860 1871686ce79c5fd97fda75526b46c148 "pdflatex"
-  "main.out" 1793044909.31341 707 d96d606bafd6191223f4c60e4afb0f47 "pdflatex"
-  "main.tex" 1793044908.53342 6970 bf89361550eebea9778e3f4c480e0264 ""
+  "main.aux" 1793045888.94302 860 1871686ce79c5fd97fda75526b46c148 "pdflatex"
+  "main.out" 1793045888.94402 707 d96d606bafd6191223f4c60e4afb0f47 "pdflatex"
+  "main.tex" 1793045888.22934 7115 395e8d28a58da108595bc4428759f4b3 ""
   (generated)
   "main.aux"
   "main.log"
